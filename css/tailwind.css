@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .nav{
+        @apply bg-[#252525] flex text-white justify-between p-2
+    }
+
+    .logo{
+        @apply font-bold text-3xl sm:ml-[250px] lg:ml-0 md:ml-0
+    }
+
+    .ul{
+        @apply lg:flex py-1 sm:hidden lg:block md:block
+    }
+
+    .ul li{
+        @apply px-2 hover:text-orange-600 hover:cursor-pointer duration-300
+    }
+
+    .banner{
+        @apply h-[400px] bg-cover p-1 m-5 rounded bg-no-repeat
+    }
+
+    .about{
+        @apply flex p-3 justify-between lg:p-[100px]
+    }
+
+    .left {
+        @apply my-10 lg:mt-[200px] lg:w-[500px]
+    }
+
+    .Gallary{
+        @apply mt-5 
+    }
+
+    .g-img{
+        @apply sm:h-[200px] sm:w-[250px] sm:m-2 rounded cursor-pointer hover:opacity-80 duration-300
+    }
+
+    .services{
+        @apply grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3
+    }
+
+    .services div{
+        @apply m-3 bg-orange-400 rounded p-4 hover:bg-orange-600 duration-200
+    }
+
+    .contact{
+        @apply bg-orange-300 p-2 grid grid-cols-1 gap-2 lg:w-[600px] sm:w-[500px] place-self-center
+    }
+
+    .contact input{
+        @apply p-1 rounded outline-0
+        
+    }
+
+    .contact textarea{
+        @apply p-1 rounded outline-0
+    }
+
+    .footer{
+        @apply bg-black my-5 text-white flex justify-evenly p-4 rounded
+    }
+
+    .fabout{
+        @apply w-[500px]
+        
+    }
+    .fabout h1{
+        @apply text-orange-500 text-xl
+    }
+
+    .fcontact h1{
+        @apply text-orange-500 text-xl
+    }
+
+    .buttom-nav{
+        @apply sm:fixed bottom-0 w-full rounded lg:hidden md:hidden flex justify-between px-2 bg-orange-900 text-white mb-2 py-2 
+    }
+
+    .buttom-nav li{
+        @apply font-semibold text-lg hover:text-blue-300 duration-200
+    }
+
+    
+
+}
